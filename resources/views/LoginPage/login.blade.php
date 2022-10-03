@@ -23,7 +23,7 @@
       <a href="#" class="h1"><b>BSW</a>
     </div>
     <div class="card-body">
-      <p class="login-box-msg">Masuk untuk memulai</p>
+      <p class="login-box-msg">Masuk</p>
 
       <form action="{{route('login')}}" method="post">
         {{ csrf_field() }}
