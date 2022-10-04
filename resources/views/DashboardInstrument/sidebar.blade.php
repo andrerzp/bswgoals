@@ -649,7 +649,14 @@
           </li>
           <li class="nav-header">LABELS</li>
           <li class="nav-item">
-            <a href="{{ route('logout') }}" class="nav-link">
+            <a href="{{ route('logout') }}"  
+            onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+            class="nav-link">
+
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+              @csrf
+            </form>
+              
               <i class="nav-icon far fa-circle text-danger"></i>
               <p class="text">Logout</p>
             </a>

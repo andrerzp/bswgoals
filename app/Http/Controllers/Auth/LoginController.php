@@ -48,4 +48,5 @@ class LoginController extends Controller
             'g-recaptcha-response' => 'required|captcha',
         ]);
     }
+    
 }
