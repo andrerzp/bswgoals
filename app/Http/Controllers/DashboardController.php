@@ -16,6 +16,80 @@ class DashboardController extends Controller
         return view('Dashboard.dashboard');
     }
 
+    public function buat_permohonan()
+    {
+        return view('DashboardUser.buatpermohonan');
+    }
+
+    public function list_permohonan()
+    {
+        return view('DashboardUser.listpermohonan');
+    }
+
+    public function tracking_permohonan()
+    {
+        return view('DashboardUser.tracking');
+    }
+
+    public function usulan()
+    {
+        return view('DashboardUser.usulan');
+    }
+
+    public function datadev()
+    {
+        return view('DashboardAdmin.datadev');
+    }
+
+    public function monitoring()
+    {
+        return view('DashboardAdmin.monitoring');
+    }
+    public function layanan()
+    {
+        return view('DashboardAdmin.layanan');
+    }
+    public function liburnasional()
+    {
+        return view('DashboardAdmin.liburnasional');
+    }
+    public function masterplane()
+    {
+        return view('DashboardAdmin.masterplane');
+    }
+    public function prosesizin()
+    {
+        return view('DashboardAdmin.prosesizin');
+    }
+    public function role()
+    {
+        return view('DashboardAdmin.role');
+    }
+    public function users()
+    {
+        return view('DashboardAdmin.users');
+    }
+    public function posisi()
+    {
+        return view('DashboardAdmin.posisi');
+    }
+    public function datapemohon()
+    {
+        return view('DashboardAdmin.datapemohon');
+    }
+    public function statistik()
+    {
+        return view('DashboardAdmin.statistik');
+    }
+    public function helpdesk()
+    {
+        return view('DashboardAdmin.helpdesk');
+    }
+    public function caridata()
+    {
+        return view('DashboardAdmin.caridata');
+    }
+
     /**
      * Show the form for creating a new resource.
      *
