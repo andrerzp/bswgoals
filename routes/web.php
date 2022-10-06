@@ -18,10 +18,12 @@ Route::get('/', function () {
 });
 
 route::group(['middleware' => ['auth','ceklevel:user,admin']], function () {
+    Route::get('/redirect','DashboardController@redirect')->name('redirect');
     Route::get('/dashboard','DashboardController@dashboard_index')->name('dashboard');
     Route::get('/buatpermohonan','DashboardController@buat_permohonan')->name('buatpermohonan');
     Route::get('/listpermohonan','DashboardController@list_permohonan')->name('listpermohonan');
     Route::get('/tracking','DashboardController@tracking_permohonan')->name('tracking');
+    Route::get('/usulan','DashboardController@usulan')->name('usulan');
     Route::get('/datadev','DashboardController@datadev')->name('datadev');
     Route::get('/monitoring','DashboardController@monitoring')->name('monitoring');
     Route::get('/layanan','DashboardController@layanan')->name('layanan');

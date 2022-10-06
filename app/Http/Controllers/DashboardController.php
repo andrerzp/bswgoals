@@ -11,7 +11,13 @@ class DashboardController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function dashboard_index()
+    
+    //Login user
+     public function redirect()
+    {
+        return view('Redirect.redirect');
+    }
+     public function dashboard_index()
     {
         return view('Dashboard.dashboard');
     }
@@ -36,6 +42,7 @@ class DashboardController extends Controller
         return view('DashboardUser.usulan');
     }
 
+    //Login admin
     public function datadev()
     {
         return view('DashboardAdmin.datadev');

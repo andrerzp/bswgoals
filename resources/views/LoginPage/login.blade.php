@@ -21,7 +21,7 @@
   <!-- /.login-logo -->
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-      <a href="#" class="h1"><b>BSW</a>
+      <a href="{{route('home')}}" class="h1"><b>BSW</a>
     </div>
     <div class="card-body">
       <p class="login-box-msg">Masuk</p>
